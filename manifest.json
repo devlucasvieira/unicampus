@@ -1,8 +1,8 @@
 {
-  "short_name": "SIFI-MT",
-  "name": "Sistema de Regularidade Fiscal e Institucional do Estado de Mato Grosso",
+  "short_name": "Unicampus",
+  "name": "Instituto Unicampus",
   "icons": [],
-  "start_url": ".",
+  "start_url": "./index.html",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
