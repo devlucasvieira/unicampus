@@ -2,7 +2,7 @@
   "name": "unicampus",
   "version": "0.1.0",
   "private": true,
-  "homepage": "/unicampus",
+  "homepage": "https://devlucasvieira.github.io/unicampus#/",
   "dependencies": {
     "@react-keycloak/web": "^3.4.0",
     "@testing-library/jest-dom": "^5.15.0",
@@ -38,6 +38,7 @@
   },
   "scripts": {
     "start": "env-cmd -f .env react-scripts start",
+    "deploy":"npm run build && cd node_modules && cd .bin && gh-pages -d ../../build",
     "build": "react-scripts build",
     "build:development": "env-cmd -f .env.development react-scripts build",
     "build:staging": "env-cmd -f .env.staging react-scripts build",
