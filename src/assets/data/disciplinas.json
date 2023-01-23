@@ -1,0 +1,14 @@
+{
+    "data": [
+        {"id": "1000","code": "f230fh0g3","name": "Arquitetura e protocolo de redes","description": "Matéria do Curso de Engenharia de Software", "status": "Ativo"},
+        {"id": "1001","code": "nvklal433","name": "Cálculo Limites e Derivadas","description": "Matéria do Curso de Engenharia de Software", "status": "Ativo"},
+        {"id": "1002","code": "zz21cz3c1","name": "Inovação disruptiva","description": "Matéria do Curso de Engenharia de Software", "status": "Ativo"},
+        {"id": "1003","code": "244wgerg2","name": "Interação humano computador","description": "Matéria do Curso de Engenharia de Software", "status": "Ativo"},
+        {"id": "1004","code": "h456wer53","name": "Sistemas operacionais","description": "Matéria do Curso de Engenharia de Software", "status": "Ativo"},
+        {"id": "1005","code": "av2231fwg","name": "Arquitetura e Organização de Computadores","description": "Matéria do Curso de Engenharia de Software", "status": "Ativo"},
+        {"id": "1006","code": "bib36pfvm","name": "Estrutura de dados","description": "Matéria do Curso de Engenharia de Software", "status": "Ativo"},
+        {"id": "1007","code": "mbvjkgip5","name": "Linguagem técnica de programação Web","description": "Matéria do Curso de Engenharia de Software", "status": "Ativo"},
+        {"id": "1008","code": "vbb124btr","name": "Métricas e Qualidade de Software","description": "Matéria do Curso de Engenharia de Software", "status": "Ativo"},
+        {"id": "1009","code": "cm230f032","name": "Projeto integrado I","description": "Matéria do Curso de Engenharia de Software", "status": "Ativo"}
+    ]
+}

@@ -1,0 +1,24 @@
+image: sefazmt/pipeline-cicd:node-14
+
+before_script:
+  - git clone http://gitlab-ci-token:$CI_JOB_TOKEN@guandu01/gitlab/sfz/arq/pipeline-cicd.git /tmp/pipeline-cicd
+
+stages:
+  - test
+  - deploy
+
+test:
+  stage: test
+  script:
+    - bash /tmp/pipeline-cicd/merge-requests.sh
+  only:
+    - merge_requests
+
+deploy:
+  stage: deploy
+  script:
+    - bash /tmp/pipeline-cicd/front-end.sh
+  only:
+    - release
+    - hotfix
+    - main

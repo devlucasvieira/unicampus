@@ -1,0 +1,14 @@
+{
+    "data": [
+        {"id": "1000","code": "f230fh0g3","name": "Engenharia de Software","description": "Bacharelado", "status": "Inativo"},
+        {"id": "1001","code": "nvklal433","name": "Engenharia da Computação","description": "Bacharelado", "status": "Inativo"},
+        {"id": "1002","code": "zz21cz3c1","name": "Análise de sistemas","description": "Bacharelado", "status": "Inativo"},
+        {"id": "1003","code": "244wgerg2","name": "Sistemas de Informação","description": "Bacharelado", "status": "Inativo"},
+        {"id": "1004","code": "h456wer53","name": "Redes de Computadores","description": "Bacharelado", "status": "Inativo"},
+        {"id": "1005","code": "av2231fwg","name": "Gestão em Tecnologia da Informação","description": "Bacharelado", "status": "Inativo"},
+        {"id": "1006","code": "bib36pfvm","name": "Ciência da Computação","description": "Bacharelado", "status": "Inativo"},
+        {"id": "1007","code": "mbvjkgip5","name": "Língua Portuguesa e Literatura","description": "Bacharelado", "status": "Inativo"},
+        {"id": "1008","code": "vbb124btr","name": "Química","description": "Bacharelado", "status": "Inativo"},
+        {"id": "1009","code": "cm230f032","name": "Física","description": "Bacharelado", "status": "Inativo"}
+    ]
+}
