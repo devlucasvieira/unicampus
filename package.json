@@ -2,7 +2,7 @@
   "name": "unicampus",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://devlucasvieira.github.io/unicampus#/",
+  "homepage": "/unicampus",
   "dependencies": {
     "@react-keycloak/web": "^3.4.0",
     "@testing-library/jest-dom": "^5.15.0",
@@ -38,8 +38,11 @@
   },
   "scripts": {
     "start": "env-cmd -f .env react-scripts start",
-    "deploy":"npm run build && cd node_modules && cd .bin && gh-pages -d ../../build",
-    "build": "react-scripts build",
+    "deploy": "npm run build && cd node_modules && cd .bin && gh-pages -d ../../build",
+    "build": "react-scripts build && npm run build-rename",
+    "build-rename": "npm run build-rename-js && npm run build-rename-css",
+    "build-rename-js": "renamer --regex --find 'main\\.[^\\.]+\\.js' --replace 'main.js' build/static/js/*.js",
+    "build-rename-css": "renamer --regex --find 'main\\.[^\\.]+\\.css' --replace 'main.css' build/static/css/*.css",
     "build:development": "env-cmd -f .env.development react-scripts build",
     "build:staging": "env-cmd -f .env.staging react-scripts build",
     "build:qa": "env-cmd -f .env.qa react-scripts build",
@@ -72,6 +75,8 @@
     "@types/file-saver": "^2.0.5",
     "@types/luxon": "^2.0.7",
     "@types/react-router-dom": "^5.3.2",
-    "env-cmd": "^10.1.0"
+    "env-cmd": "^10.1.0",
+    "renamer": "^4.0.0",
+    "replace-in-file": "^6.3.5"
   }
 }
