@@ -16,6 +16,7 @@
     "bootstrap": "^5.2.3",
     "file-saver": "^2.0.5",
     "formik": "^2.2.9",
+    "gh-pages": "^5.0.0",
     "jspdf": "^2.5.1",
     "jspdf-autotable": "^3.5.28",
     "keycloak-js": "^15.0.2",

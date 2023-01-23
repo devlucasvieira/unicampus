@@ -12,10 +12,6 @@ function App() {
   const [show, setShow] = useState<boolean>(false);
   const { isAuthenticated, login, initialized, user } = useAuth();
 
-  if (initialized) {
-    return <div>loading...</div>;
-  }
-
   if (initialized || !isAuthenticated()) {
     login();
 
