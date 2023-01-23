@@ -2,7 +2,7 @@
   "short_name": "Unicampus",
   "name": "Instituto Unicampus",
   "icons": [],
-  "start_url": "./index.html",
+  "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
