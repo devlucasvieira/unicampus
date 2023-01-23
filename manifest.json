@@ -1,0 +1,9 @@
+{
+  "short_name": "SIFI-MT",
+  "name": "Sistema de Regularidade Fiscal e Institucional do Estado de Mato Grosso",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
