@@ -13,17 +13,12 @@ export const useAuth = () => {
 
     useEffect( () => {
 
-        if (initialized) {
-            return;
-        }
-
         if ( initialized ) {
             keycloak.onTokenExpired = () => {
                 keycloak.updateToken(TOKEN_REFRESH - 30)
                     .then(result => {
                         if (!result) {
 
-                            keycloak.login();
                         } else {
 
                             setUser(data => ({...data, token: keycloak.token}));
@@ -55,7 +50,6 @@ export const useAuth = () => {
 
     const resetPassword = useCallback( () => {
         const urlEncoded = encodeURIComponent( keycloak.clientId || '' );
-        // window.location.href = `${keycloak.authServerUrl}/realms/${keycloak.realm}/login-actions/reset-credentials?client_id=${urlEncoded}&tab_id=oVsldJJIl98`;
     }, [keycloak] );
 
     const logout = useCallback( () => {
@@ -65,13 +59,8 @@ export const useAuth = () => {
         }, 100)
     }, [keycloak] );
 
-    const loginGovBR = useCallback( () => {
-        // const params = `?client_id=${APP_CLIENT_ID}&response_type=code&scope=openid&kc_idp_hint=govbr&redirect_uri=${APP_URL}`
-        // window.location.href = `${keycloak.authServerUrl}/realms/${keycloak.realm}/protocol/openid-connect/auth${params}`;
-    }, [keycloak] );
-
     const login = useCallback( () => {
-        // keycloak.login();
+        keycloak.login();
     }, [keycloak] );
 
     const register = useCallback(() => {
@@ -87,7 +76,6 @@ export const useAuth = () => {
         login,
         logout,
         register,
-        resetPassword,
-        loginGovBR
+        resetPassword
     }
 }

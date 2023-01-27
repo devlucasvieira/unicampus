@@ -7,7 +7,6 @@ export enum StatusCurso {
 }
 
 export type FiltroCurso = {
-    unidadeOriginaria?: string;
 
     nome?: string;
 

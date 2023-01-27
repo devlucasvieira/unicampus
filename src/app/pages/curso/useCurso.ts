@@ -72,11 +72,11 @@ export const useCurso = () => {
             let data: any = {
                 id: 1,
                 nome: "Engenharia de Software",
-                descricao: "O curso de Engenharia de Software prepara profissionais focados no desenvolvimento de novos programas de computador. Ao concluir o curso, o profissional poderá projetar, testar e fazer manutenção de softwares, sistemas, jogos, aplicativos e plataformas digitais.O uso massivo de celulares e tablets pela população brasileira é um dos motivos pelos quais profissionais habilitados para lidar com essa tecnologia sejam tão requisitados. No mercado de trabalho, a área de atuação que se destaca é a de Tecnologia da Informação, desenvolvendo softwares para empresas ou projetos com financiamento próprio ou sob demanda para clientes isolados.                Os tipos de formação para o curso de Engenharia de Software são: bacharelado e pós-graduação.",
+                descricao: "O curso de Engenharia de Software prepara profissionais",
                 status: StatusCurso.ATIVO,
             };
-    
-            setValues(data);
+            setValues({...data || undefined});
+            console.log(data)
             
         }
     }, [id, httpGet, onError, setValues]);
